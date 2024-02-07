@@ -1,0 +1,107 @@
+<div style="font-family:monospace;">
+    <h1><strong>Customer onboarding process</strong></h1>
+    <p>Please follow the step below for processing customers application</p>
+    <div style="background-color:rgba(195,255,127,0.829);padding:10px 5px 1px 10px;"><strong>Objective:</strong>
+        <ul>
+            <li>Process Lead conversion to customer and activate service.</li>
+        </ul>
+        <br>
+        <strong>Assumptions:</strong>
+        <ul>
+            <li>The Lead's location is feasible for service activation.</li>
+        </ul>
+    </div>
+    <div>
+        <br>
+        <h2><u>STEPS</u></h2>
+        <br>
+        <h3>SALES HEAD/MANAGER | CDMG-ADMIN</h3>
+        <ol start="1" style="line-height:16px;color:#858585;">
+            <li>If the Lead came from Sales Rep, <strong>Sales Head/Manager</strong> will <u>assign</u> the Lead to Agent/Sales rep. If the Lead came from Other source, <strong>CDMG-Admin</strong> will <u>assign</u> the Lead to Agent/Sales rep.</li>
+            <li>If the Lead came from Sales Rep, <strong>Sales Head/Manager</strong> will<u> create</u> Task using Customer onboarding template and assign the task to Agent/Sales rep. If the Lead came from Other source, <strong>CDMG-Admin</strong> will<u> create</u> Task using Customer onboarding template and assign the task to Agent/Sales rep.</li>
+        </ol>
+        <br>
+        <h3>SALES REP</h3>
+        <ol start="3" style="line-height:17px;">
+            <li><u>Check</u> Lead information and internet service quotation, <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #1,#2</b>, <u>set</u>
+                <strong>Pipeline to: "Qualification"</strong>. <u>Set</u>
+                <strong>Workflow status to: "New"</strong></li>
+            <li><u>Get</u> required documents from the Lead, mark <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #3</b>, set <strong>Pipeline to: "Verification"</strong>. <u>Set</u>
+                <strong>Workflow status to: "In-progress - Verification"</strong>.</li>
+            <li><em><u>Assign</u> the next step to CDMG Group</em></li>
+        </ol>
+        <br>
+        <h3>CDMG-ADMIN</h3>
+        <ol start="6" style="line-height:17px;">
+            <li><u>Verify</u> submitted documents and <u>get</u> additional information (ID, Birthday), <span style="color:#FF0000;">if no document, <u>assign</u> the task back to Sales Rep and add comment "no documents". go back to <strong>Step 3</strong>. </span><u>Mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #4</b>, <u>set</u>
+                <strong>Pipeline to: "Verification"</strong>. <u>Set</u>
+                <strong>Workflow status to: "In progress - Verification"</strong>.</li>
+            <li><span style="color:#FF0000;">[For unpaid pre-payment]: do a follow up to the Lead via email and/or coordinate with Sales Rep for assistance, if reaffirmation is successful, continue to <strong>Step 6</strong>, otherwise <u>set</u> the the <strong>Pipeline status to: "Lost".</strong> Assign the task to Sales Head/Manager and <u>add</u> comment: "unpaid pre-payment". <u>Set</u> <strong>Workflow status to: "Done"</strong>.|Process ends here. </span>
+                <br>
+                <u>Convert</u> Lead to Customer. <u>Check</u> Lead Quotes, <u>set</u>
+                <strong>Pipeline status to: "Won"</strong>. <u>Click</u> convert and <u>select</u> service quote, <u>check</u> customer information (How did you find us, contract period, Birthday, ID) and internet services before converting to Customer. <u>Set</u> service status to "<strong>Pending</strong>". <u>Mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #5</b>, <u>set</u>
+                <strong>Workflow status to: "In-progress - pre-payment".</strong>
+                <br>Note: <u>Set</u> Coversion type to: "Create active customer"</li>
+            <li><em><u>Assign</u> the next step to Billing &amp; Collection Group</em></li>
+        </ol>
+        <br>
+        <h3>BILLING &amp; COLLECTION</h3>
+        <ol start="9" style="line-height:17px;">
+            <li><u>Change</u> customer status to <strong>"New (Not yet connected)"</strong> and <u>check</u> service provisioned, <span style="color:#FF0000;">if incomplete, convert back to lead, <u>add</u> comment: "no internet service quote" and <u>assign</u> the task back to CDMG group. Go back to <strong>Step 6.</strong></span> Welcome message will be sent automatically after an hour, <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #6</b>, <u>set</u>
+                <strong>Workflow to: "In-progress pre-payment"</strong>.</li>
+            <li><u>Create and send</u> proforma invoice to customer, <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #7</b>. <u>Set</u>
+                <strong>workflow status to: "In-progress pre-payment"</strong>.</li>
+            <li><u>Check</u> if the new Customer paid the pre-payment within 15 days, <span style="color:#FF0000;">if not, convert back to Lead, assign the task back to CDMG, add comment: "For follow up, unpaid pre-payment", <u>set</u> <strong>Pipeline status to: Verification</strong>, then go back to <strong>Step 6.</strong></span>
+                <u>Mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #8</b>. <u>Set</u>
+                <strong>Workflow status to: "In-progress - Schedule for activation"</strong>.</li>
+            <li><em><u>Assign</u> the next step to ISP Group</em></li>
+        </ol>
+        <br>
+        <h3>ISP</h3>
+        <ol start="13" style="line-height:17px;">
+            <li><u>Assign</u> and <u>pre-config</u> ONU for the New Customer; and <u>schedule</u> for installation. <u>Mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #9</b> and <u>set</u>
+                <strong>Workflow status to: "In-progress - Schedule for activation"</strong>.</li>
+            <li><u>Install</u> ONU to customer and <u>set</u> start date and End date (calculate based on contract period), <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #10 &amp; #11</b>. <u>Set</u>
+                <strong>Workflow status to: "In-progress - Scheduled for Activation".</strong>
+                <br>Note:
+                <br>
+                <ul>
+                    <li><u>Change</u> Customer information - Current status to: "Active",</li>
+                    <li>Services - Current status to: "Active",</li>
+                    <li>Pending status to: "Paused".</li>
+                </ul>
+            </li>
+            <li><u>Secure</u> signed Acceptance form and Subscription Agreement/Contract, <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #12</b>. <strong>Set Workflow status to: "In-Progress - Billing Configuration"</strong>.</li>
+            <li><em><u>Assign</u> the next step to Billing &amp; Collection Group</em></li>
+        </ol>
+        <br>
+        <h3>BILLING &amp; COLLECTION</h3>
+        <ol start="17" style="line-height:17px;">
+            <li><u>Set</u> billing configuration and recurring invoice, <u>mark</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #13</b> and <u>set</u>
+                <strong>Workflow status to: "Done"</strong>.</li>
+            <li><em><u>Assign</u> the next step to SALES HEAD/MANAGER (Project lead)</em></li>
+        </ol>
+        <br>
+        <h3>SALES HEAD/MANAGER</h3>
+        <ol start="19" style="line-height:17px;">
+            <li><span style="color:#FF0000;">[For Lost Lead]: review and acknowledge the status.</span>
+                <br>
+                <u>Review</u> and <u>Archived</u> task, <u>check</u>
+                <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">checklist #1 to #13</b> and <u>set</u>
+                <strong>Workflow status to: "Done"</strong>.</li>
+        </ol>
+        <br>
+        <hr>
+        <p>Project lead: SALES HEAD/MANAGER</p>
+    </div>
+</div>

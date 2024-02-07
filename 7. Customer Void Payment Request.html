@@ -1,0 +1,55 @@
+<div style="font-family:monospace;">
+    <h1><strong>Customer Void Payment Request</strong></h1>
+    <p>Please follow the step below for processing customers application</p>
+    <div style="background-color:rgba(195,255,127,0.829);padding:10px 5px 1px 10px;"><strong>Objective:</strong>
+        <ul>
+            <li>To validate if the payment was received.</li>
+            <li>To guide the customer on how to change modes of payment.</li>
+        </ul>
+        <br>
+        <strong>Assumptions:</strong>
+        <ul>
+            <li>The customer settled a Proforma and Recurring Invoice in the Customer portal.</li>
+            <li>The customer wants to validate if the payment was received.</li>
+            <li>The customer is interested in an alternative payment channel.</li>
+        </ul>
+    </div>
+    <div>
+        <br>
+        <h2><u>STEPS</u></h2>
+        <br>
+        <h3>Billing and Collection (Refund)</h3>
+        <ol start="1">
+            <li>B&amp;C <u>receives</u> a ticket from CDMG-CS regarding billing concerns and evaluates the concern.
+                <ol type="a">
+                    <li><span style="color:#FF0000;">If the Customer paid using the online and e-wallet payment option, check if the invoice is in “Pending status” for more than 60 minutes. If yes, the customer will receive a warning message. If not, proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 2</b>. If they receive a warning and continue then proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 2</b>. If they didn’t proceed, <span style="color:#26ad00;">|Process ends here.</span></span>
+                    </li>
+                    <li><span style="color:#FF0000;">If the customer paid using the Over The Counter payment option,check if the invoice is in “Pending status” for more than 48 hours. If yes, the customer will receive a warning message. If not, proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 2</b>. If they receive a warning and continue then proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 2</b>. If they didn’t proceed, <span style="color:#26ad00;">|Process ends here.</span></span>
+                    </li>
+                </ol>
+            </li>
+            <li>CDMG-CS <u>checks</u> if there have been any deductions from the customer’s account balance.
+                <ol style="color:#FF0000;" type="a">
+                    <li>If yes, ask the customer for a proof of payment</li>
+                </ol>
+            </li>
+        </ol>
+        <ul>
+            <li>Receipt</li>
+            <li>Screenshot of successful transaction</li>
+            <li>Ref. No.</li>
+            <li>Email Address</li>
+        </ul><a> If payment is valid, proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 3</b>. If payment is invalid, Transaction status will remain "Pending" on Dragonpay System. Proceed to 2a. </a>If not, proceed to <b style="background-color:#B0E0E6;border:1px solid #858585;padding:1px 4px;">Step 4</b>.
+        <h3>IT</h3>
+        <ol start="3">
+            <li>If payment is valid, IT will contact Dragonpay to request for revalidation. Payment will be updated to success. <span style="color:#26ad00;">|Process ends here.</span></li>
+        </ol>
+        <h3>Billing and Collection (Refund)</h3>
+        <ol start="4">
+            <li>B&amp;C <u>Proceed</u> to void payment, B&amp;C clicks the Void payment button. <span style="color:#26ad00;">|Process ends here.</span>. The <strong>"Pending"</strong> Invoice will be updated to <strong>"Unpaid"</strong> in the Customer portal and the customer may proceed on paying the same invoice in the Customer portal.</li>
+        </ol>
+        <br>
+        <hr>
+        <p>Project lead: CDMG-CS</p>
+    </div>
+</div>
